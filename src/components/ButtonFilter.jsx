@@ -6,6 +6,7 @@ const ButtonFilter = ({ fetchData: fetchAPi }) => {
 
   useEffect(() => {
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if(loading) {
@@ -20,7 +21,7 @@ const ButtonFilter = ({ fetchData: fetchAPi }) => {
 
   const clickFilterButton = e => {
     fetchAPi({ params: { category: e.target.value } });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }
 
   return (
