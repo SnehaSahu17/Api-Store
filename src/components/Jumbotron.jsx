@@ -39,6 +39,5 @@ const Jumbotron = ({ fetchData }) => {
       </div>
     </div>
   )
-}
-fefefefef
-export default Jumbotrone
+ }
+export default Jumbotron
