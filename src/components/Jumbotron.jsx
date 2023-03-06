@@ -6,12 +6,14 @@ const Jumbotron = ({ fetchData }) => {
   const handleEnter = e => {
     if(e.key === 'Enter') {
       fetchData({ params: { title: value } });
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       setValue('');
     }
   }
   const handleButtonSearch = () => {
     if(value.length) {
       fetchData({ params: { title: value } });
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       setValue('');
     }
   }
